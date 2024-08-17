@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #86c2e6;
+}
+
+.main-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.ta-wrapper {
+  background: #7c8085;
+  color: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 7px 7px rgba(114, 33, 33, 0.2);
+  min-height: 300px;
+}
+
+.heading h1 {
+  text-align: left;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.input-wrapper {
+  margin-bottom: 20px;
+}
+.input-wrapper input {
+  outline: none;
+    border: 0;
+    background: rgba(0,0,0,0.3);
+    padding: 10px;
+    color: white;
+    width: 500px;
+}
+.input-wrapper button {
+    background: #86c2e6;
+    color: white;
+    border: 0;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding-bottom: 10px;
+}
+.todo-item input {
+  background: transparent;
+  border: navajowhite;
+  color: white;
+  outline: none;
+}
+.todo-item i{
+  color: #86c2e6;
+  background: transparent;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-left: 5px;
+}
+.todo-item button:hover {
+  color: white;
+}
+.done {
+  text-decoration: line-through;
+}
+.fa-x {
+  padding: 6px 8px !important;
+}
+
+
+
+
+#myModal {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    /* 15% from the top and centered */
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    /* Could be more or less, depending on screen size */
+    width: 80%; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.modal-header {
+    text-align: right;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.modal-body {
+    text-align: center;
+    font-size: 18px;
+}
